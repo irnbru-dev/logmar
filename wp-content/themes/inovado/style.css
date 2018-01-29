@@ -433,15 +433,46 @@ input[type="button"]:active{
     /*width: 200px;*/
     width: 48%;
 	max-width: 100%;
-    margin: 10px 10px 20px 0;
+    margin: 10px 0 20px 0;
     padding: 20px;
     display: inline-block;
+    font-size: 16px;
 }
 
 .wpcf7-form input[type="email"] {
     display: inline-block;
     width: 44%;
     padding: 20px 15px 20px 20px;
+    font-size: 16px;
+}
+
+.wpcf7-form input[name="city"],
+.wpcf7-form input[name="email"] {
+    margin-left: 3.5%;
+}
+
+@media(max-width: 991px) {
+    .wpcf7-form input[type="text"] {
+        width: 100%;
+    }
+
+    .wpcf7-form input[type="email"] {
+        width: 91%;
+        margin: 10px 0 20px 0;
+    }
+
+    .wpcf7-form input[name="city"],
+    .wpcf7-form input[name="email"] {
+        margin-left: 0;
+    }
+}
+
+.two_third .wpcf7-form input[type="text"] {
+    width: 100%;
+}
+
+.two_third .wpcf7-form input[type="email"] {
+    width: 93%;
 }
 
 .wpcf7-form textarea {
@@ -452,6 +483,7 @@ input[type="button"]:active{
     width: 100%;
     margin: 5px 0 0 0;
     height: 100px;
+    font-size: 16px;
 }
 
 .wpcf7-form select {
@@ -472,16 +504,23 @@ input[type="button"]:active{
 .wpcf7-form input[type="checkbox"] {    width: auto }
 
 .wpcf7-form input[type='submit'] {
-    background: #D68D2E;
+    background: rgb(214, 135, 46);
     color: #fff;
-    border: 0;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
     margin-top: 20px;
     display: block;
+    /*float: right;*/
+    outline: none;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+    border: 1px solid transparent;
 }
 
 .wpcf7-form input[type='submit']:hover {
-
+    /*background: rgba(214, 135, 46, 0.8);*/
+    color: rgb(214, 135, 46);
+    background: #fff;
+    border: 1px solid rgb(214, 135, 46);
 }
 
 
@@ -493,8 +532,8 @@ input[type="button"]:active{
 
 .wpcf7-list-item-label 	{ font-weight: normal }
 .wpcf7-response-output 	{ display: none }
-.wpcf7-form .invalid 	{ color: #bf1515 !important }
-.wpcf7-not-valid 		{ border: 1px solid #bf1515 !important; }
+.wpcf7-form .invalid 	{ color: rgb(214, 135, 46) !important }
+.wpcf7-not-valid 		{ border: 1px solid rgb(214, 135, 46) !important; }
 .wpcf7 span.wpcf7-not-valid-tip { display: none }
 
 div.wpcf7-response-output {
@@ -3123,3 +3162,27 @@ a.button.alternative-3 i,
 /* ------------------------------------------------------------------------ */
 /* EOF
 /* ------------------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+    #title-flexslider {
+        display: none;
+    }
+}
+
+.btn-make-order a {
+    display: inline-block;
+    text-align: center;
+    background: #D68D2E;
+    color: #fff!important;
+    width: 150px;
+    padding: 10px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media (min-width: 767px) {
+    .btn-make-order {
+        display: none;
+    }
+}

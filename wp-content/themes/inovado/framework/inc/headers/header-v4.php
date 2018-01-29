@@ -35,7 +35,11 @@
 
 				<div class="phone-top four columns clearfix">
 					<div><span>Москва</span><span><a rel="nofollow" itemprop="telephone" href="tel:+74996496000" title="Телефон +7 (499) 649-60-00">+7 (499) 649-60-00</a></span></div>
-				</div>
+                </div>
+
+                <div class="clearfix btn-make-order">
+                    <a href="http://www.logmar.ru/wpnew/zayavka-na-perevoz-gruzov/">Оставить заявку</a>
+                </div>
 			
 				<!-- <div class="phone-top four columns clearfix">
 					<div><span>Владивосток</span><span><a rel="nofollow" itemprop="telephone" href="tel:+74232060430" title="Телефон +7 (4232) 06-04-30">+7 (4232) 06-04-30</a></span></div>
